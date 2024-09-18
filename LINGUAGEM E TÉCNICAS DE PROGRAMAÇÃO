@@ -1,0 +1,58 @@
+2. LINGUAGEM E TÉCNICAS DE PROGRAMAÇÃO
+Fundamento da Linguagem C - 
+
+A linguagem C existe desde antes da internet e foi criada pelo cientista da computação Dennis Ritchie e Ken Thompson, em 1972. O propósito inicial era que fosse uma linguagem usada no desenvolvimento de uma nova versão do sistema operacional Unix, mas hoje é aplicada para criar softwares. É também muito usada em banco de dados para todos os tipos de sistemas: financeiro, governamental, mídia, entretenimento, telecomunicações, saúde, educação, varejo, redes sociais, etc. Grandes empresas como Apple, Microsoft, Oracle usam a linguagem C.
+Em programação, a linguagem é por onde o hardware (máquina) e o programador se comunicam. É um processo formal que funciona por meio de uma série de instruções, símbolos, palavras-chave e regras semânticas.
+
+C é uma linguagem de programação compilada, de propósito geral e de baixo nível, o que significa que se aproxima muito da linguagem de máquina. Entretanto, também permite abstrações de alto nível, o que a torna poderosa para a criação de sistemas complexos e para o controle detalhado de recursos de hardware.
+Ela é uma das linguagens mais versáteis e disponíveis, sendo muito relevante até os dias de hoje. Permite que o programador controle e acesse diretamente diversos conceitos, possibilitando aprender todos os conhecimentos fundamentais de programação a fim de se obter um bom desempenho nos programas.Além de ter sua sintaxe de fácil entendimento.
+Um programa pode ser definido como um conjunto de instruções que descrevem uma tarefa a ser realizada por um computador. Em outras palavras, programas são algoritmos codificados em uma linguagem de programação a fim de gerar instruções a serem executadas por um computador. Apesar de muitas vezes serem considerados como sinônimos, o termo software costuma designar não somente um programa, mas também sua documentação e seus dados de configuração associados.
+
+Onde a linguagem C pode ser aplicada:
+Sistemas Embutidos - Com a linguagem C é possível programar microcontroladores – sistemas eletrônico, físico, que se assemelham a um computador muito pequeno capaz de realizar determinadas tarefas de maneira eficaz e sob um tamanho altamente compacto. 
+Desenvolvimento de Sistemas - O controle granular que C oferece sobre os recursos do sistema faz dela uma escolha popular para o desenvolvimento de sistemas operacionais, drivers de dispositivo e outros softwares de sistema.
+Jogos e Renderização Gráfica - Em cenários onde cada milissegundo conta, como em jogos de computador e renderização gráfica, C oferece o desempenho e a manipulação de hardware necessários.
+Análise de Dados - Embora linguagens como Python e R sejam mais comumente associadas à análise de dados, C é usado quando a eficiência e a velocidade são cruciais, especialmente para grandes conjuntos de dados.
+Desenvolvimento de Compiladores -  A linguagem C tem um papel histórico e prático na criação de compiladores, muitos dos quais são escritos em C ou suas variantes, como C++.
+
+Interfaces:
+Todos os programas em linguagem C usam funções das bibliotecas padrão da linguagem.  O conjunto de funções de cada biblioteca é descrito em um arquivo-interface (= header file), que tem o mesmo nome da biblioteca e sufixo .h.  (Essa interface também é conhecida como API, ou application programming interface.)
+Algumas das principais bibliotecas padrão C:
+stdlib.h
+stdio.h
+math.h
+string.h
+limits.h
+ctype.h
+time.h
+stdbool.h
+
+
+Interface com o Sistema Operacional
+Funções da Biblioteca Padrão C (stdlib e stdio):
+stdio.h, como fopen(), fread(), fwrite(), e fclose(). Além disso, a biblioteca stdlib.h oferece funções para alocação dinâmica de memória, controle de processos, manipulação de ambiente e outras operações relacionadas ao sistema.
+Chamada de Sistema (System Calls): fork(), exec(), e wait() são usadas para gerenciar processos.
+
+Interface com Bibliotecas Externas
+Acesso a Portas de Entrada/Saída:utilizando instruções específicas do sistema operacional ou chamadas de baixo nível.
+Interface com Banco de Dados:
+ODBC (Open Database Connectivity): Uma API que permite que programas em C se conectem a vários bancos de dados relacionais, como SQL Server, MySQL, e PostgreSQL, de maneira padronizada.
+MySQL Connector/C: Uma API específica para permitir que programas em C façam consultas e transações diretamente em bancos de dados MySQL.
+Interface Gráfica e de Usuário
+GTK+ (GIMP Toolkit): Uma biblioteca que permite a criação de interfaces gráficas multiplataforma. GTK+ é usado principalmente em sistemas Linux, mas também está disponível para Windows.
+Qt: Uma biblioteca C++ para desenvolvimento de GUI, que pode ser usada em programas C devido à compatibilidade entre C e C++.
+ncurses: Para interfaces baseadas em texto, a biblioteca ncurses oferece uma interface simples para a criação de janelas e caixas de diálogo em ambientes de terminal.
+
+Sockets: A programação de redes em C utiliza a API de sockets, que permite a comunicação entre processos em máquinas diferentes através de protocolos de rede, como TCP/IP e UDP. Essa interface permite criar servidores e clientes de rede diretamente em C, como servidores web, FTP, entre outros.
+
+O C oferece controle direto sobre a memória, permitindo que o programador use ponteiros para acessar e manipular endereços de memória de forma explícita.A alocação dinâmica de memória é outra interface Funções como malloc(), calloc(), realloc() e free() 
+
+Virtudes e limitações: 
+Programar em C permite entender os processos ocultos que acontecem em nossas máquinas. Essa linguagem nos permite chegar mais perto do hardware do computador sem mexer com a linguagem Assembly (uma linguagem de baixo nível, voltada apenas à comunicação com a máquina). Ele também nos permite lidar com uma infinidade de tarefas de baixo nível enquanto permanece legível a nós.
+C é uma ótima linguagem para programadores iniciantes. Não apenas porque a sintaxe (as regras para a construção de um programa em uma determinada linguagem) é simples, mas porque C influenciou a maioria das linguagens mais utilizadas hoje em dia. Depois de aprender C, você descobre que ela tem muitos pontos em comum com Java, Javascript, Shell e PHP, por exemplo.
+Rapidez - Consegue obter performance semelhantes às obtidas pelo assembly, através de instruções de alto nível, fazendo uso de instruções semelhantes às utilizadas por linguagens como PASCAL ou COBOL, mesmo para usar mecanismos de mais baixo nível, como o endereçamento de memória ou manipulação de bits.
+Simples - A sua sintaxe é extremamente simples, e o número de palavras reservadas, de tipos de dados básicos e operadores é diminuído .
+Portável - O código escrito numa máquina, pode ser transportado para outra máquina e compilado sem qualquer alteração.
+Modular - Permite o desenvolvimento modular de aplicações, facilitando a separação de projetos em módulos distintos.
+
+Suas limitações começam com seu aprendizado; C é uma linguagem que pede muita experiência técnica para ser aprendida. É preciso entender os conceitos complexos de algoritmos.Outra desvantagem é que C é dependente da plataforma: o código executável é compilado para o hardware específico em que ele irá executar.
